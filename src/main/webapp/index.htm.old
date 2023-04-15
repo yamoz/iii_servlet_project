@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="https://meyerweb.com/eric/tools/css/reset/reset.css" media="all" />
+	<style>
+		html,
+		body {
+			height: 100%;
+		}
+
+		#main_menu {
+			height: 100%;
+			outline: red solid 2px;
+		}
+
+		#main_menu li {
+			height: 25%;
+			text-align: center;
+		}
+		
+		#main_menu a {
+			text-decoration: none;
+			/* line-height: 100%; */
+			/* font-size: 100%; */
+		}
+
+		#main_menu li:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		#main_menu li:hover {
+			background-color: #ddd;
+		}
+	</style>
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<ul id="main_menu">
+		<li><a href="./orderMeal.html">orderMeal</a></li>
+		<li><a href="./showDataById.html">editMealById</a></li>
+<!-- 		<li><a href="./deleteDataById.html">deleteMealById</a></li> -->
+		<li><a href="./showAllDatas.jsp">showALL(staffOnly)</a></li>
+	</ul>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+/* 版面設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+body {
+    background-color: rgb(239, 243, 208);
+}
+
+/* 第一區header */
+header {
+    position: fixed;
+    /*將header固定在上方*/
+    top: 0;
+    left: 0;
+    right: 0;
+    /*切齊網頁線上*/
+    z-index: 100;
+    display: flex;
+    background-color: rgb(255, 213, 0);
+    opacity: 0.9;
+    /* 參考 */
+    /* https://freshman.tech/flexbox-navbar/ */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+    height: 60px;
+    padding-bottom: -10px;
+    filter: saturate(8);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover a {
+    color: darkgreen;
+}
+
+/* 第二區menu */
+
+.menu {
+    background-color: rgb(239, 243, 208);
+}
+
+.menu .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.menu .box-container .box {
+    flex: 1 1 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px gainsboro;
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    padding-bottom: 30px;
+    height: 300px;
+
+}
+
+.menu .box-container .box img {
+    height: 200px;
+    width: 90%;
+    padding-left: 45px;
+}
+
+.menu .box-container .box .btn {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(255, 213, 0);
+    background-color: rgb(255, 213, 0);
+    opacity: 1;
+}
+
+.submit {
+    font-size: 20px;
+    padding: 10px;
+
+    width: 100%;
+    height: 50px;
+    border: 5px solid rgb(255, 213, 0);
+    background-color: rgb(255, 213, 0);
+    
+    cursor:pointer
+}
+
+/* 第三區footer */
+.footer {
+    background-color: rgb(235, 97, 97);
+    opacity: 0.9;
+    text-align: center;
+}
+
+.footer .social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.footer .credit {
+    padding: 10px;
+    color: beige;
+    font-weight: normal;
+}
+
+.wrapper {
+    font-size: 30px;
+    padding: 10px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(255, 213, 0);
+    background-color: rgb(255, 213, 0);
+    opacity: 1;
+}
+
+.wrapper span {
+    width: 100%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    user-select: none;
+}
+
+.email {
+    background-color: rgb(255, 213, 0);
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

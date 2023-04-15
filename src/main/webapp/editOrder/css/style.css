@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: rgb(239, 243, 208);
+}
+
+
+/* 第一區header */
+header {
+    position: fixed;
+    /*將header固定在上方*/
+    top: 0;
+    left: 0;
+    right: 0;
+    /*切齊網頁線上*/
+    z-index: 100;
+    display: flex;
+    background-color: rgb(255, 213, 0);
+    opacity: 0.9;
+    /* 參考 */
+    /* https://freshman.tech/flexbox-navbar/ */
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 200px;
+    height: 60px;
+    padding-bottom: -10px;
+    filter: saturate(10);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-item a {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover a {
+    color: darkgreen;
+}
+
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+}
+
+.container {
+    width: 25%;
+    height: 25%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box {
+    width: 380px;
+    padding: 40px 30px 50px 30px;
+    background: #fff;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 5px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+input[type="submit"] {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
